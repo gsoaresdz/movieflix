@@ -1,66 +1,57 @@
-.movie-links-main-container {
+.catalog-container {
+    margin: 20px 20px 28px 18px
+}
+
+.catalog-list{
     display: flex;
+    /* border: 1px solid yellow; */
     flex-direction: column;
-    margin: 83px auto 0;
-    padding: 0 10px;
-    width: 100%;
 }
 
-.movie-links-main-container h2 {
-    color: #fff;
-    font-size: 24px;
-    margin-bottom: 45px;
-    letter-spacing: -0.015em;
-}
-
-.movie-links-main-container .movie-links a {
-    text-decoration: none;
-    color: #fff;
+.catalog-list-item {
+    margin: 0;
+    font-weight: 400;
     font-size: 18px;
     letter-spacing: -0.015em;
 }
 
-.movie-links-main-container .movie-links {
-    margin-bottom: 13px;
-}
-
-@media (min-width: 576px) {
-    .movie-links-main-container {
-        margin: 108px auto 0;
-        padding: 0 20px;
-    }
-
-    .movie-links-main-container h2 {
-        font-size: 36px;
-        margin-bottom: 40px;
-    }
-
-    .movie-links-main-container .movie-links a {
-        font-size: 22px;
-    }
-    
-    .movie-links-main-container .movie-links {
-        margin-bottom: 27px;
+@media(min-width:576px){
+    .catalog-list{
+        flex-direction: row;
+        gap: 19px ;
+        flex-wrap: wrap;
     }
 }
 
-@media (min-width: 1200px) {
-    .movie-links-main-container {
-        margin: 108px auto 0;
-        padding: 0 40px;
-        max-width: 1200px;
+@media(min-width:768px){
+    .catalog-list{
+        justify-content: space-between;
+        gap: 40px ;
     }
 
-    .movie-links-main-container h2 {
-        font-size: 48px;
-        margin-bottom: 50px;
+    .catalog-container {
+        margin: 40px 40px 58px;
+    }
+}
+
+@media(min-width:1024px){
+    .catalog-container {
+        margin-left: 40px;
     }
 
-    .movie-links-main-container .movie-links a {
+    .catalog-list-item {
         font-size: 24px;
-    }
-    
-    .movie-links-main-container .movie-links {
+        letter-spacing: -0.015em;
         margin-bottom: 27px;
+    }
+}
+
+@media(min-width:1200px){
+    .catalog-list{
+        gap: 20px ;
+    }
+
+    .catalog-container {
+        margin: 40px;
     }
 }

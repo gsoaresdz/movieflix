@@ -10,24 +10,76 @@ import Pagination from 'components/Pagination';
 
 import './styles.css';
 
+type ControlComponentsData = {
+  activePage: number;
+  filterData: GenreFilterData;
+}
+
 const MovieCatalog = () => {
+
+  const [page, setPage] = useState<SpringPage<Movie>>();
+
+  const [controlComponentsData, setControlComponentsData] = useState<ControlComponentsData>(
+    {
+      activePage:0, 
+      filterData: {name: null}
+    }
+  );
+
+  
+  const handlePageChange = (pageNumber: number) =>{
+    setControlComponentsData({activePage: pageNumber, filterData: controlComponentsData.filterData});
+  }
+
+  const getMovies = useCallback(() => {
+    const config: AxiosRequestConfig = {
+      method: 'GET',
+      url: '/movies',
+      withCredentials: true,
+      baseURL: BASE_URL,
+      params: {
+        page: controlComponentsData.activePage,
+        size: 4,
+        name: controlComponentsData.filterData.name,
+        genreId: controlComponentsData.filterData.name?.id
+      },
+    };
+
+    requestBackend(config).then((response) => {
+      setPage(response.data);
+    });
+  } , [controlComponentsData]);
+
+  useEffect(() => {
+    getMovies();
+  }, [getMovies]);
+
+  const handleSubmitFilter = (data: GenreFilterData) => {
+    setControlComponentsData({activePage: 0, filterData: data});
+  }
+
   return (
     <>
-      <main className="movie-links-main-container">
-        <section>
-          <h2>Tela listagem de filmes</h2>
-          <p className="movie-links">
-            <Link to="/movies/1">
-              Acessar /movies/1
-            </Link>
-          </p>
-          <p className="movie-links">
-            <Link to="/movies/2">
-              Acessar /movies/2
-            </Link>
-          </p>
-        </section>
-      </main>
+      <div className="catalog-container">
+        <div>
+          <GenreFilter onSubmitFilter={handleSubmitFilter}/>
+        </div>
+        <div className="catalog-list">
+          {page?.content.map((movie) => (
+            <div key={movie.id}>
+              <Link to={`/movies/${movie.id}/reviews`}>
+                <MovieCard movie={movie} />
+              </Link>
+            </div>
+          ))}
+        </div>
+        <Pagination 
+        forcePage={page?.number}
+        pageCount={(page) ? page.totalPages : 0 } 
+        range={3}
+        onChange={handlePageChange}
+      />
+      </div>
     </>
   );
 };
