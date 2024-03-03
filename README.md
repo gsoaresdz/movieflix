@@ -14,6 +14,69 @@ Cada usuário tem um nome, email e senha, sendo o email utilizado como nome de u
 
 ### **Layout mobile**
 
-![Mobile 1](https://github.com/vanessa-maganhoto/assets/blob/main/cap5-bds-movieflix/versa-mobile-1.png)
-![Mobile 2](https://github.com/vanessa-maganhoto/assets/blob/main/cap5-bds-movieflix/versa-mobile-2.png)
-![Mobile 3](https://github.com/vanessa-maganhoto/assets/blob/main/cap5-bds-movieflix/versa-mobile-3.png)
+![image](https://github.com/gsoaresdz/movieflix/assets/69989654/753c9eba-9667-4d79-8af9-bba13d0428b9)
+
+### **Layout Web**
+
+![image](https://github.com/gsoaresdz/movieflix/assets/69989654/f0167a1e-5dc0-4417-a4c0-d763d54022a7)
+
+
+## **Tecnologias utilizadas**
+
+### **Back end**
+
+- Java
+- Spring Boot
+- JUnit5
+- JPA / Hibernate
+- Maven
+
+### **Front end**
+
+- HTML / CSS / JS / TypeScript
+- ReactJS
+
+### **Implantação em produção**
+
+- Back end: Heroku
+- Front end web: Netlify
+- Banco de dados: Postgresql
+
+## **Como executar o projeto**
+
+### **Back end**
+
+Pré-requisitos: Java 11
+
+```bash
+bashCopy code
+# clonar repositório
+git clone https://github.com/gsoaresdz/movieflix.git
+
+# entrar na pasta do projeto back end
+cd backend
+
+# executar o projeto
+./mvnw spring-boot:run
+
+```
+
+### **Front end**
+
+Pré-requisitos: npm / yarn
+
+```bash
+bashCopy code
+# clonar repositório
+git clone https://github.com/gsoaresdz/movieflix.git
+
+# entrar na pasta do projeto front end web
+cd frontend
+
+# instalar dependências
+yarn install
+
+# executar o projeto
+yarn start
+
+```
