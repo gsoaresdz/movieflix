@@ -15,3 +15,5 @@ Cada usuário tem um nome, email e senha, sendo o email utilizado como nome de u
 ### **Layout mobile**
 
 ![Mobile 1](https://github.com/vanessa-maganhoto/assets/blob/main/cap5-bds-movieflix/versa-mobile-1.png)
+![Mobile 2](https://github.com/vanessa-maganhoto/assets/blob/main/cap5-bds-movieflix/versa-mobile-2.png)
+![Mobile 3](https://github.com/vanessa-maganhoto/assets/blob/main/cap5-bds-movieflix/versa-mobile-3.png)
