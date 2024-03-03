@@ -20,6 +20,9 @@ Cada usuário tem um nome, email e senha, sendo o email utilizado como nome de u
 
 ![image](https://github.com/gsoaresdz/movieflix/assets/69989654/f0167a1e-5dc0-4417-a4c0-d763d54022a7)
 
+### Modelo conceitual
+
+![image](https://github.com/gsoaresdz/movieflix/assets/69989654/179f27cf-7ee2-401e-b2d0-3e816adb9951)
 
 ## **Tecnologias utilizadas**
 
