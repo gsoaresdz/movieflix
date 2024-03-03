@@ -49,7 +49,6 @@ Cada usuário tem um nome, email e senha, sendo o email utilizado como nome de u
 Pré-requisitos: Java 11
 
 ```bash
-bashCopy code
 # clonar repositório
 git clone https://github.com/gsoaresdz/movieflix.git
 
@@ -66,7 +65,6 @@ cd backend
 Pré-requisitos: npm / yarn
 
 ```bash
-bashCopy code
 # clonar repositório
 git clone https://github.com/gsoaresdz/movieflix.git
 
