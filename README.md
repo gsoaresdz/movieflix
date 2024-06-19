@@ -32,15 +32,15 @@ Cada usuário tem um nome, email e senha, sendo o email utilizado como nome de u
 
 ### **Layout mobile**
 
-https://github.com/gsoaresdz/movieflix/assets/69989654/753c9eba-9667-4d79-8af9-bba13d0428b9
+![image](https://github.com/gsoaresdz/movieflix/assets/69989654/753c9eba-9667-4d79-8af9-bba13d0428b9)
 
 ### **Layout Web**
 
-https://github.com/gsoaresdz/movieflix/assets/69989654/f0167a1e-5dc0-4417-a4c0-d763d54022a7
+![image](https://github.com/gsoaresdz/movieflix/assets/69989654/f0167a1e-5dc0-4417-a4c0-d763d54022a7)
 
 ### Modelo conceitual
 
-https://github.com/gsoaresdz/movieflix/assets/69989654/179f27cf-7ee2-401e-b2d0-3e816adb9951
+![image](https://github.com/gsoaresdz/movieflix/assets/69989654/179f27cf-7ee2-401e-b2d0-3e816adb9951)
 
 ## **:sparkles: Features**
 
