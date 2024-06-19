@@ -1,8 +1,26 @@
-# **MovieFlix**
+<h1 align="center">MovieFlix</h1>
+<p align="center">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/gsoaresdz/movieflix?color=56BEB8">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/gsoaresdz/movieflix?color=56BEB8">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/gsoaresdz/movieflix?color=56BEB8">
+</p>
+<p align="center">
+  <a href="#dart-sobre">Sobre</a> &#xa0; | &#xa0; 
+  <a href="#memo-estrutura-do-projeto">Estrutura do Projeto</a> &#xa0; | &#xa0;
+  <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
+  <a href="#rocket-tecnologias">Tecnologias</a> &#xa0; | &#xa0;
+  <a href="#white_check_mark-requerimentos">Requerimentos</a> &#xa0; | &#xa0;
+  <a href="#checkered_flag-execução">Execução</a> &#xa0; | &#xa0;
+  <a href="#memo-licença">Licença</a> &#xa0; | &#xa0;
+  <a href="https://github.com/gsoaresdz" target="_blank">Autor</a>
+</p>
+<br>
+
+## **:dart: Sobre**
 
 Desafio realizado como requisito obrigatório do Bootcamp Spring React da [DevSuperior](https://devsuperior.com.br/). O desenvolvimento do back-end foi feito em Java, utilizando a metodologia TDD com testes escritos usando o JUnit5. O desenvolvimento do front-end utilizou TypeScript e React (React Router Dom, Context API e Axios).
 
-## **Sobre o projeto**
+## **:memo: Estrutura do Projeto**
 
 O sistema MovieFlix é um catálogo de filmes que podem ser listados e avaliados pelos usuários. Existem dois tipos de usuários: visitantes (VISITOR) e membros (MEMBER). Apenas os usuários membros podem inserir avaliações no sistema.
 
@@ -14,17 +32,29 @@ Cada usuário tem um nome, email e senha, sendo o email utilizado como nome de u
 
 ### **Layout mobile**
 
-![image](https://github.com/gsoaresdz/movieflix/assets/69989654/753c9eba-9667-4d79-8af9-bba13d0428b9)
+https://github.com/gsoaresdz/movieflix/assets/69989654/753c9eba-9667-4d79-8af9-bba13d0428b9
 
 ### **Layout Web**
 
-![image](https://github.com/gsoaresdz/movieflix/assets/69989654/f0167a1e-5dc0-4417-a4c0-d763d54022a7)
+https://github.com/gsoaresdz/movieflix/assets/69989654/f0167a1e-5dc0-4417-a4c0-d763d54022a7
 
 ### Modelo conceitual
 
-![image](https://github.com/gsoaresdz/movieflix/assets/69989654/179f27cf-7ee2-401e-b2d0-3e816adb9951)
+https://github.com/gsoaresdz/movieflix/assets/69989654/179f27cf-7ee2-401e-b2d0-3e816adb9951
 
-## **Tecnologias utilizadas**
+## **:sparkles: Features**
+
+:heavy_check_mark: **Login de Usuário**: Apenas usuários autenticados podem acessar o sistema.
+
+:heavy_check_mark: **Listagem de Filmes**: Filmes listados de forma paginada e ordenados alfabeticamente.
+
+:heavy_check_mark: **Detalhes do Filme**: Página com informações detalhadas do filme e suas avaliações.
+
+:heavy_check_mark: **Avaliação de Filmes**: Usuários membros podem registrar avaliações para os filmes.
+
+:heavy_check_mark: **Filtragem por Gênero**: Opção de filtrar filmes por gênero.
+
+## **:rocket: Tecnologias**
 
 ### **Back end**
 
@@ -45,39 +75,54 @@ Cada usuário tem um nome, email e senha, sendo o email utilizado como nome de u
 - Front end web: Netlify
 - Banco de dados: Postgresql
 
-## **Como executar o projeto**
+## **:white_check_mark: Requerimentos**
 
 ### **Back end**
 
-Pré-requisitos: Java 11
+- Java 11
+
+### **Front end**
+
+- npm / yarn
+
+## **:checkered_flag: Execução**
+
+### **Back end**
 
 ```bash
 # clonar repositório
-git clone https://github.com/gsoaresdz/movieflix.git
+$ git clone https://github.com/gsoaresdz/movieflix.git
 
 # entrar na pasta do projeto back end
-cd backend
+$ cd backend
 
 # executar o projeto
-./mvnw spring-boot:run
+$ ./mvnw spring-boot:run
 
 ```
 
 ### **Front end**
 
-Pré-requisitos: npm / yarn
-
 ```bash
 # clonar repositório
-git clone https://github.com/gsoaresdz/movieflix.git
+$ git clone https://github.com/gsoaresdz/movieflix.git
 
 # entrar na pasta do projeto front end web
-cd frontend
+$ cd frontend
 
 # instalar dependências
-yarn install
+$ yarn install
 
 # executar o projeto
-yarn start
-
+$ yarn start
 ```
+
+## **:memo: Licença**
+
+Este projeto está sob licença do MIT. Para obter mais detalhes, consulte o arquivo [LICENSE](LICENSE).
+
+Feito com :heart: by <a href="https://github.com/gsoaresdz" target="_blank">gsoaresdz</a>
+
+&#xa0;
+
+<a href="#top">De volta ao topo</a>
