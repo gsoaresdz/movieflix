@@ -1,62 +1,46 @@
-<h1 align="center">MovieFlix</h1>
-<p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/gsoaresdz/movieflix?color=56BEB8">
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/gsoaresdz/movieflix?color=56BEB8">
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/gsoaresdz/movieflix?color=56BEB8">
-</p>
-<p align="center">
-  <a href="#dart-sobre">Sobre</a> &#xa0; | &#xa0; 
-  <a href="#memo-estrutura-do-projeto">Estrutura do Projeto</a> &#xa0; | &#xa0;
-  <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
-  <a href="#rocket-tecnologias">Tecnologias</a> &#xa0; | &#xa0;
-  <a href="#white_check_mark-requerimentos">Requerimentos</a> &#xa0; | &#xa0;
-  <a href="#checkered_flag-execução">Execução</a> &#xa0; | &#xa0;
-  <a href="#memo-licença">Licença</a> &#xa0; | &#xa0;
-  <a href="https://github.com/gsoaresdz" target="_blank">Autor</a>
-</p>
-<br>
+<h1 align="center">MovieFlix</h1> <p align="center"> <img alt="Github top language" src="https://img.shields.io/github/languages/top/gsoaresdz/movieflix?color=56BEB8"> <img alt="Github language count" src="https://img.shields.io/github/languages/count/gsoaresdz/movieflix?color=56BEB8"> <img alt="Repository size" src="https://img.shields.io/github/repo-size/gsoaresdz/movieflix?color=56BEB8"> </p> <p align="center"> <a href="#dart-about">About</a> &#xa0; | &#xa0; <a href="#memo-project-structure">Project Structure</a> &#xa0; | &#xa0; <a href="#sparkles-features">Features</a> &#xa0; | &#xa0; <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0; <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0; <a href="#checkered_flag-execution">Execution</a> &#xa0; | &#xa0; <a href="#memo-license">License</a> &#xa0; | &#xa0; <a href="https://github.com/gsoaresdz" target="_blank">Author</a> </p> <br>
 
-## **:dart: Sobre**
+## **:dart: About**
 
-Desafio realizado como requisito obrigatório do Bootcamp Spring React da [DevSuperior](https://devsuperior.com.br/). O desenvolvimento do back-end foi feito em Java, utilizando a metodologia TDD com testes escritos usando o JUnit5. O desenvolvimento do front-end utilizou TypeScript e React (React Router Dom, Context API e Axios).
+This challenge was completed as a mandatory requirement of the Spring React Bootcamp by [DevSuperior](https://devsuperior.com.br/). The backend was developed in Java using the TDD methodology with tests written in JUnit5. The frontend was built using TypeScript and React (React Router Dom, Context API, and Axios).
 
-## **:memo: Estrutura do Projeto**
+## **:memo: Project Structure**
 
-O sistema MovieFlix é um catálogo de filmes que podem ser listados e avaliados pelos usuários. Existem dois tipos de usuários: visitantes (VISITOR) e membros (MEMBER). Apenas os usuários membros podem inserir avaliações no sistema.
+The MovieFlix system is a movie catalog where users can list and review movies. There are two types of users: visitors (VISITOR) and members (MEMBER). Only members can submit reviews.
 
-Ao acessar o sistema, é necessário que o usuário faça login. Somente usuários logados podem navegar pelos filmes. Após o login, o usuário é direcionado para a listagem de filmes, que são exibidos de forma paginada e ordenados alfabeticamente por título. É possível filtrar os filmes por gênero.
+To access the system, users must log in. Only authenticated users can browse the movies. After logging in, the user is redirected to a paginated list of movies, displayed alphabetically by title. Movies can also be filtered by genre.
 
-Ao selecionar um filme, uma página de detalhes é exibida, mostrando todas as informações do filme, além de suas avaliações. Se o usuário for um MEMBER, ele também pode registrar uma avaliação nesta página.
+When selecting a movie, a details page is displayed, showing all the movie’s information and its reviews. If the user is a MEMBER, they can also leave a review on this page.
 
-Cada usuário tem um nome, email e senha, sendo o email utilizado como nome de usuário. Cada filme conta com um título, subtítulo, imagem, ano de lançamento, sinopse e gênero. Os usuários membros podem registrar avaliações para os filmes. Um mesmo usuário membro pode deixar mais de uma avaliação para o mesmo filme.
+Each user has a name, email, and password, with the email serving as the username. Each movie includes a title, subtitle, image, release year, synopsis, and genre. Member users can submit reviews for the movies. A single member user can leave more than one review for the same movie.
 
-### **Layout mobile**
+### **Mobile Layout**
 
-![image](https://github.com/gsoaresdz/movieflix/assets/69989654/753c9eba-9667-4d79-8af9-bba13d0428b9)
+https://github.com/gsoaresdz/movieflix/assets/69989654/753c9eba-9667-4d79-8af9-bba13d0428b9
 
-### **Layout Web**
+### **Web Layout**
 
-![image](https://github.com/gsoaresdz/movieflix/assets/69989654/f0167a1e-5dc0-4417-a4c0-d763d54022a7)
+https://github.com/gsoaresdz/movieflix/assets/69989654/f0167a1e-5dc0-4417-a4c0-d763d54022a7
 
-### Modelo conceitual
+### **Conceptual Model**
 
-![image](https://github.com/gsoaresdz/movieflix/assets/69989654/179f27cf-7ee2-401e-b2d0-3e816adb9951)
+https://github.com/gsoaresdz/movieflix/assets/69989654/179f27cf-7ee2-401e-b2d0-3e816adb9951
 
 ## **:sparkles: Features**
 
-:heavy_check_mark: **Login de Usuário**: Apenas usuários autenticados podem acessar o sistema.
+:heavy_check_mark: **User Login**: Only authenticated users can access the system.
 
-:heavy_check_mark: **Listagem de Filmes**: Filmes listados de forma paginada e ordenados alfabeticamente.
+:heavy_check_mark: **Movie Listing**: Paginated and alphabetically ordered movie listings.
 
-:heavy_check_mark: **Detalhes do Filme**: Página com informações detalhadas do filme e suas avaliações.
+:heavy_check_mark: **Movie Details**: Page with detailed movie information and reviews.
 
-:heavy_check_mark: **Avaliação de Filmes**: Usuários membros podem registrar avaliações para os filmes.
+:heavy_check_mark: **Movie Reviews**: Member users can submit reviews for movies.
 
-:heavy_check_mark: **Filtragem por Gênero**: Opção de filtrar filmes por gênero.
+:heavy_check_mark: **Genre Filtering**: Option to filter movies by genre.
 
-## **:rocket: Tecnologias**
+## **:rocket: Technologies**
 
-### **Back end**
+### **Backend**
 
 - Java
 - Spring Boot
@@ -64,65 +48,60 @@ Cada usuário tem um nome, email e senha, sendo o email utilizado como nome de u
 - JPA / Hibernate
 - Maven
 
-### **Front end**
+### **Frontend**
 
 - HTML / CSS / JS / TypeScript
 - ReactJS
 
-### **Implantação em produção**
+### **Production Deployment**
 
-- Back end: Heroku
-- Front end web: Netlify
-- Banco de dados: Postgresql
+- Backend: Heroku
+- Frontend Web: Netlify
+- Database: PostgreSQL
 
-## **:white_check_mark: Requerimentos**
+## **:white_check_mark: Requirements**
 
-### **Back end**
+### **Backend**
 
 - Java 11
 
-### **Front end**
+### **Frontend**
 
 - npm / yarn
 
-## **:checkered_flag: Execução**
+## **:checkered_flag: Execution**
 
-### **Back end**
+### **Backend**
 
 ```bash
-# clonar repositório
+# Clone the repository
 $ git clone https://github.com/gsoaresdz/movieflix.git
 
-# entrar na pasta do projeto back end
+# Navigate to the backend project folder
 $ cd backend
 
-# executar o projeto
+# Run the project
 $ ./mvnw spring-boot:run
-
 ```
 
-### **Front end**
+### **Frontend**
 
 ```bash
-# clonar repositório
+# Clone the repository
 $ git clone https://github.com/gsoaresdz/movieflix.git
 
-# entrar na pasta do projeto front end web
+# Navigate to the frontend project folder
 $ cd frontend
 
-# instalar dependências
+# Install dependencies
 $ yarn install
 
-# executar o projeto
+# Run the project
 $ yarn start
 ```
 
-## **:memo: Licença**
+## **:memo: License**
 
-Este projeto está sob licença do MIT. Para obter mais detalhes, consulte o arquivo [LICENSE](LICENSE).
+This project is under the MIT license. For more details, see the [LICENSE](LICENSE) file.
 
-Feito com :heart: by <a href="https://github.com/gsoaresdz" target="_blank">gsoaresdz</a>
-
-&#xa0;
-
-<a href="#top">De volta ao topo</a>
+Made with :heart: by <a href="https://github.com/gsoaresdz" target="_blank">gsoaresdz</a>
